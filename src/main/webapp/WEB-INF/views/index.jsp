@@ -1,18 +1,21 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Gia vi cua Bun cha</title>
 </head>
 <body>
-<h1>Gia vi cua Pho Bo</h1>
-<hr>
+<div align="center">
+    <h1>Gia vi cua Pho Bo</h1>
+    <hr>
+    <form method="post" action="/save">
+        <input type="checkbox" name="giavi" value="Hat tieu">Hat tieu<br>
+        <input type="checkbox" name="giavi" value="Ot">Ot<br>
+        <input type="checkbox" name="giavi" value="Quay">quay<br>
+        <input type="checkbox" name="giavi" value="Rau thom">Rau thom<br><br>
+        <input type="submit" name="save" value="Save">
+    </form>
 
-<form>
-    <input type="checkbox" name="giavi" value="hattieu">Hat tieu
-    <input type="checkbox" name="giavi" value="damtoi">Dam toi
-    <input type="checkbox" name="giavi" value="tuongot">Tuong ot
-    <input type="checkbox" name="giavi" value="quay">Quay<br><br>
-    <input type="submit" value="Save" name="Save"/>
-</form>
+</div>
 </body>
 </html>
