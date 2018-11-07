@@ -17,8 +17,7 @@ public class GiaviController {
     @RequestMapping(value = "save")
     public String listGiavi(@RequestParam("giavi") String[] giavi, Model model) {
         model.addAttribute("soluongiavidachon", giavi.length);
-
-        model.addAttribute("listgiavi",giavi.toString());
+        model.addAttribute("giavi",giavi);
         return "listgiavi";
     }
 
